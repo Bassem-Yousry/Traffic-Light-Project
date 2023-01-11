@@ -10,17 +10,13 @@
 #define APP_H_
 
 
-#include "..\..\MCAL\GPIO\GPIO.h"
-#include "..\..\MCAL\Timer\timer.h"
-#include "..\..\MCAL\Interrupt\interrupt.h"
-#include "..\..\HAL\BUTTON\button.h"
-#include "..\..\HAL\LED\LED.h"
+
 #include "..\..\STD_TYPES.h"
 
 
 
-void App_Init();
-void App_Start();
+u8 App_Init();
+u8 App_Start();
 
 
 

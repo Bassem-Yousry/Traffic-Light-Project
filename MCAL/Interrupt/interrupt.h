@@ -29,7 +29,8 @@ void vector (void)
 # define _enableInt()   __asm__ __volatile__ ("sei" ::: "memory")
 # define _disableInt()  __asm__ __volatile__ ("cli" ::: "memory")
 
-void INT0_Init(u8 Copy_u8IntSense);
-void INT0_ClearInt();
+u8 INT0_Init(u8 Copy_u8IntSense);
+u8 INT0_SetHandler(void(*HandlerFunc)(void));
+u8 INT0_ClearInt();
 
 #endif /* INTERRUPT_H_ */

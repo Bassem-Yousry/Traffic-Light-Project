@@ -13,8 +13,9 @@
 #define ButtonPin	PortD,2
 #define ButtonPressed	1
 #define ButtonNotPressed	0
-void BUTTON_Init(u8 Copy_u8PortNumber,u8 Copy_u8PinNumber);
-void BUTTON_GetState(u8 Copy_u8PortNumber,u8 Copy_u8PinNumber,u8* Copy_u8State);
-u8  BUTTON_Test();
+u8 BUTTON_Init(u8 Copy_u8PortNumber,u8 Copy_u8PinNumber,u8 Copy_u8EnableINT);
+u8 BUTTON_SetHandler(u8 Copy_u8PortNumber,u8 Copy_u8PinNumber,void(*HandlerFunc)(void));
+u8 BUTTON_GetState(u8 Copy_u8PortNumber,u8 Copy_u8PinNumber,u8* Copy_u8State);
+u8 BUTTON_Test();
 
 #endif /* BUTTON_H_ */
