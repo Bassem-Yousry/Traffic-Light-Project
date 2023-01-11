@@ -28,6 +28,15 @@ If the pedestrian's green led is on do nothing and exit pedestrian mode ,if not 
 
 ![flow chart](https://user-images.githubusercontent.com/56139834/211884788-b230205e-d355-4a32-972b-631e8664b2f3.png)
 
+## System constraints
+
+-	Long press on the button will be ignored.
+
+-	Double press on the button the second one will be ignored.
+
+-	After returning from pedestrian mode press will be ignored till car green led is illuminated.
+
+
 ## Screenshots
 - ### folder structure
  
